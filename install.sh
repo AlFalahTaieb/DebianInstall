@@ -1,5 +1,10 @@
 #############BASICS#############
-sudo apt install curl git keepassxc transmission-qt firefox-esr rofi neofetch scrot feh compton zathura
+
+echo "*** OK, let's go ! ***"
+
+sudo apt install curl git keepassxc transmission-qt firefox-esr rofi neofetch 
+scrot feh compton zathura lxappearance wicd wicd-gtk compton kitty
+
 
 apt install -y libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb \
     libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev \
