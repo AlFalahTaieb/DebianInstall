@@ -3,14 +3,14 @@
 echo "*** OK, let's go ! ***"
 
 sudo apt-get install curl git keepassxc transmission-qt firefox-esr rofi neofetch 
-scrot feh compton zathura lxappearance wicd wicd-gtk compton kitty
-
+scrot feh compton zathura lxappearance wicd wicd-gtk kitty pulseaudio pavucontrol 
 
 apt-get install -y libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb \
     libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev \
     libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev \
     libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev \
-    libxcb-xrm0 libxcb-xrm-dev autoconf ffmpeg dmenu dunst
+    libxcb-xrm0 libxcb-xrm-dev autoconf ffmpeg dmenu dunst \
+    jq xbacklight rofi 
     
     
 cd /tmp
@@ -36,6 +36,12 @@ curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add -
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 sudo apt-get install spotify-client
+
+# Papiru Icon
+
+sudo add-apt-repository ppa:papirus/papirus
+echo "Installing Papirus Icons"
+sudo apt install papirus-icon-theme -yy
 
 # Touchpad settings
 sudo tee /usr/share/X11/xorg.conf.d/41-libinput-custom.conf <<EOF
