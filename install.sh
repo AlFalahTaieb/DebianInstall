@@ -53,3 +53,8 @@ Section "InputClass"
     Option "NaturalScrolling" "true"
 EndSection
 EOF
+
+# Grub update for boot load screen
+sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=nomsi,noaer"/' /etc/default/grub
+sudo update-grub
+
