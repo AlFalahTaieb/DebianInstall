@@ -12,7 +12,7 @@ apt-get install -y libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb \
     libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev \
     libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev \
     libxcb-xrm0 libxcb-xrm-dev autoconf ffmpeg dmenu dunst \
-    jq xbacklight rofi 
+    jq xbacklight rofi  cmus 
     
     
 cd /tmp
